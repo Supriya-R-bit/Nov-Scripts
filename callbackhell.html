@@ -1,0 +1,29 @@
+ <html><script>
+    function placeOrder(item,callback) {
+        setTimeout(() =>{
+            console.log('Order Placed for',item);
+        },5000)
+    }
+function makePayment(amount,callback) {
+    setTimeout(()=>{
+        console.log('Payment Recieved:',amount);
+    },4000)
+}
+function confirmOrder(callback) {
+    setTimeout(()=>{
+        console.log('Order confirmed..');
+    },1000)
+}
+
+function sendEmail(callback){
+    setTimeout(()=>{
+    console.log('Successful');
+    },1000)
+}
+//All tasks are asyncronous tasks
+placeOrder('Shirts');
+makePayment(2500);
+confirmOrder();
+sendEmail();
+</script>
+</html>
